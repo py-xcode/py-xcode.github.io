@@ -1,0 +1,327 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <title>教师节贺卡</title>  
+        <style>
+            body {  
+                font-family: Arial, sans-serif;  
+                color: #333;  
+                background-color: #f5f5f5;  
+                position:static;
+            }  
+
+            body > .card {    
+                width: 667px;   
+                height:375px;   
+                margin: 0 auto;    
+                padding: 20px;    
+                border: 1px solid #ccc;    
+                border-radius: 5px;    
+                box-shadow: 0px 0px 10px rgba(0,0,0,0.1); 
+                position: relative;
+            }
+
+            .card h1 {  
+                text-align: center;  
+                color: #333;  
+            }  
+
+            .card p {  
+                text-align: center;  
+                color: #666;  
+            }  
+
+            .card button {  
+                margin-top: 10px;  
+                padding: 5px 10px;  
+                background-color: #4CAF50; /* Green */  
+                border: none;  
+                color: white;  
+                text-align: center;  
+                text-decoration: none;  
+                display: inline-block;  
+                font-size: 16px; 
+                cursor: pointer;  
+                border-radius: 5px;  
+            }
+
+            .threeD{
+		       font-size:50px; /*设置字体大小*/
+		       font-weight:600; /*设置字体粗细*/
+		       text-shadow:1px 0px #ffe100, 1px 2px #f6da03, 3px 1px #ecd100,
+		                2px 3px #d5bc00, 4px 2px #d4bb00, 4px 4px #d4bb00,
+		                5px 3px #d1b800, 5px 5px #cab200, 7px 4px #baa400,
+		                6px 6px #b49f00, 8px 5px #9e8b00, 7px 7px #9b8900,
+		                9px 6px #817200, 9px 8px #5f5400, 11px 7px #4f4600/*设置文字阴影*/
+		    }
+
+            
+            #animated_div1
+            {
+            width:120px;
+            height:70px;
+            margin-top: 0px;
+            margin-left:0px;
+            background:#ff2a00d8;
+            color:#ffffff;
+            position:relative;
+            font-size: 18px;
+            padding:5px;
+            animation:animated_div1 5s forwards;
+            -moz-animation:animated_div1 5s forwards;
+            -webkit-animation:animated_div1 5s forwards;
+            -o-animation:animated_div1 5s forwards;
+            animation-fill-mode :forwards;
+            border-radius:5px;
+            -webkit-border-radius:5px;
+            z-index: 10;
+            font-family: "华文楷体";
+            }
+            
+            @keyframes animated_div1
+            {
+            0%		{transform: rotate(0deg);left:0px;}
+            25%		{transform: rotate(20deg);left:0px;}
+            50%		{transform: rotate(0deg);left:500px;}
+            55%		{transform: rotate(0deg);left:500px;}
+            70%		{transform: rotate(0deg);left:500px;background:#ffa600;}
+            100%	{transform: rotate(-360deg);left:0px;}
+            }
+            
+            @-webkit-keyframes animated_div1
+            {
+            0%		{-webkit-transform: rotate(0deg);left:0px;}
+            25%		{-webkit-transform: rotate(20deg);left:0px;}
+            50%		{-webkit-transform: rotate(0deg);left:500px;}
+            55%		{-webkit-transform: rotate(0deg);left:500px;}
+            70%		{-webkit-transform: rotate(0deg);left:500px;background:#ffa600;}
+            100%	{-webkit-transform: rotate(-360deg);left:0px;}
+            }
+            
+            @-moz-keyframes animated_div1
+            {
+            0%   {-moz-transform: rotate(0deg);left:0px;}
+            25%  {-moz-transform: rotate(20deg);left:0px;}
+            50%  {-moz-transform: rotate(0deg);left:500px;}
+            55%  {-moz-transform: rotate(0deg);left:500px;}
+            70%  {-moz-transform: rotate(0deg);left:500px;background:#ffa600;}
+            100% {-moz-transform: rotate(-360deg);left:0px;}
+            }
+            
+            @-o-keyframes animated_div1
+            {
+            0%   {transform: rotate(0deg);left:0px;}
+            25%  {transform: rotate(20deg);left:0px;}
+            50%  {transform: rotate(0deg);left:500px;}
+            55%  {transform: rotate(0deg);left:500px;}
+            70%  {transform: rotate(0deg);left:500px;background:#ffa600;}
+            100% {transform: rotate(-360deg);left:0px;}
+            }
+
+            #animated_div2
+            {
+            width:120px;
+            height:70px;
+            margin-top: -80px;
+            margin-left:30px;
+            background:#ffa600;
+            color:#ffffff;
+            position:relative;
+            font-size: 18px;
+            padding:5px;
+            animation:animated_div2 5s forwards;
+            -moz-animation:animated_div2 5s forwards;
+            -webkit-animation:animated_div2 5s forwards;
+            -o-animation:animated_div2 5s forwards;
+            border-radius:5px;
+            -webkit-border-radius:5px;
+            z-index:9;
+            font-family: "华文楷体";
+            }
+            
+            @keyframes animated_div2
+            {
+            0%		{transform: rotate(0deg);left:0px;}
+            25%		{transform: rotate(20deg);left:0px;}
+            50%		{transform: rotate(0deg);left:380px;}
+            55%		{transform: rotate(0deg);left:380px;}
+            70%		{transform: rotate(0deg);left:380px;background:#bfef00;}
+            100%	{transform: rotate(-360deg);left:120px;}
+            }
+            
+            @-webkit-keyframes animated_div2
+            {
+            0%		{-webkit-transform: rotate(0deg);left:0px;}
+            25%		{-webkit-transform: rotate(20deg);left:0px;}
+            50%		{-webkit-transform: rotate(0deg);left:380px;}
+            55%		{-webkit-transform: rotate(0deg);left:380px;}
+            70%		{-webkit-transform: rotate(0deg);left:380px;background:#bfef00;}
+            100%	{-webkit-transform: rotate(-360deg);left:120px;}
+            }
+            
+            @-moz-keyframes animated_div2
+            {
+            0%   {-moz-transform: rotate(0deg);left:0px;}
+            25%  {-moz-transform: rotate(20deg);left:0px;}
+            50%  {-moz-transform: rotate(0deg);left:380px;}
+            55%  {-moz-transform: rotate(0deg);left:380px;}
+            70%  {-moz-transform: rotate(0deg);left:380px;background:#bfef00;}
+            100% {-moz-transform: rotate(-360deg);left:120px;}
+            }
+            
+            @-o-keyframes animated_div2
+            {
+            0%   {transform: rotate(0deg);left:0px;}
+            25%  {transform: rotate(20deg);left:0px;}
+            50%  {transform: rotate(0deg);left:380px;}
+            55%  {transform: rotate(0deg);left:380px;}
+            70%  {transform: rotate(0deg);left:380px;background:#bfef00;}
+            100% {transform: rotate(-360deg);left:120px;}
+            }
+
+            #animated_div3
+            {
+            width:120px;
+            height:70px;
+            margin-top: -80px;
+            margin-left:60px;
+            background:#bfef00;
+            color:#ffffff;
+            position:relative;
+            font-size: 18px;
+            padding:5px;
+            animation:animated_div3 5s forwards;
+            -moz-animation:animated_div3 5s forwards;
+            -webkit-animation:animated_div3 5s forwards;
+            -o-animation:animated_div3 5s forwards;
+            border-radius:5px;
+            -webkit-border-radius:5px;
+            z-index:8;
+            font-family: "华文楷体";
+            }
+            
+            @keyframes animated_div3
+            {
+            0%		{transform: rotate(0deg);left:0px;}
+            25%		{transform: rotate(20deg);left:0px;}
+            50%		{transform: rotate(0deg);left:260px;}
+            55%		{transform: rotate(0deg);left:260px;}
+            70%		{transform: rotate(0deg);left:260px;background:#00ef83;}
+            100%	{transform: rotate(-360deg);left:240px;}
+            }
+            
+            @-webkit-keyframes animated_div3
+            {
+            0%		{-webkit-transform: rotate(0deg);left:0px;}
+            25%		{-webkit-transform: rotate(20deg);left:0px;}
+            50%		{-webkit-transform: rotate(0deg);left:260px;}
+            55%		{-webkit-transform: rotate(0deg);left:260px;}
+            70%		{-webkit-transform: rotate(0deg);left:260px;background:#00ef83;}
+            100%	{-webkit-transform: rotate(-360deg);left:240px;}
+            }
+            
+            @-moz-keyframes animated_div3
+            {
+            0%   {-moz-transform: rotate(0deg);left:0px;}
+            25%  {-moz-transform: rotate(20deg);left:0px;}
+            50%  {-moz-transform: rotate(0deg);left:260px;}
+            55%  {-moz-transform: rotate(0deg);left:260px;}
+            70%  {-moz-transform: rotate(0deg);left:260px;background:#00ef83;}
+            100% {-moz-transform: rotate(-360deg);left:240px;}
+            }
+            
+            @-o-keyframes animated_div3
+            {
+            0%   {transform: rotate(0deg);left:0px;}
+            25%  {transform: rotate(20deg);left:0px;}
+            50%  {transform: rotate(0deg);left:260px;}
+            55%  {transform: rotate(0deg);left:260px;}
+            70%  {transform: rotate(0deg);left:260px;background:#00ef83;}
+            100% {transform: rotate(-360deg);left:240px;}
+            }
+
+            #animated_div4
+            {
+            width:120px;
+            height:70px;
+            margin-top: -80px;
+            margin-left:90px;
+            background:#00ef83;
+            color:#ffffff;
+            position:relative;
+            font-size: 18px;
+            padding:5px;
+            animation:animated_div4 5s forwards;
+            -moz-animation:animated_div4 5s forwards;
+            -webkit-animation:animated_div4 5s forwards;
+            -o-animation:animated_div4 5s forwards;
+            border-radius:5px;
+            -webkit-border-radius:5px;
+            z-index:7;
+            font-family: "华文楷体";
+            }
+            
+            @keyframes animated_div4
+            {
+            0%		{transform: rotate(0deg);left:0px;}
+            25%		{transform: rotate(20deg);left:0px;}
+            50%		{transform: rotate(0deg);left:140px;}
+            55%		{transform: rotate(0deg);left:140px;}
+            70%		{transform: rotate(0deg);left:140px;background:#00b7ef;}
+            100%	{transform: rotate(-360deg);left:360px;}
+            }
+            
+            @-webkit-keyframes animated_div4
+            {
+            0%		{-webkit-transform: rotate(0deg);left:0px;}
+            25%		{-webkit-transform: rotate(20deg);left:0px;}
+            50%		{-webkit-transform: rotate(0deg);left:140px;}
+            55%		{-webkit-transform: rotate(0deg);left:140px;}
+            70%		{-webkit-transform: rotate(0deg);left:140px;background:#00b7ef;}
+            100%	{-webkit-transform: rotate(-360deg);left:360px;}
+            }
+            
+            @-moz-keyframes animated_div4
+            {
+            0%   {-moz-transform: rotate(0deg);left:0px;}
+            25%  {-moz-transform: rotate(20deg);left:0px;}
+            50%  {-moz-transform: rotate(0deg);left:140px;}
+            55%  {-moz-transform: rotate(0deg);left:140px;}
+            70%  {-moz-transform: rotate(0deg);left:140px;background:#00b7ef;}
+            100% {-moz-transform: rotate(-360deg);left:360px;}
+            }
+            
+            @-o-keyframes animated_div4
+            {
+            0%   {transform: rotate(0deg);left:0px;}
+            25%  {transform: rotate(20deg);left:0px;}
+            50%  {transform: rotate(0deg);left:140px;}
+            55%  {transform: rotate(0deg);left:140px;}
+            70%  {transform: rotate(0deg);left:140px;background:#00b7ef;}
+            100% {transform: rotate(-360deg);left:360px;}
+            }
+
+            .bg{
+                z-index: -100;
+                position: absolute;
+                margin-top:-20px;
+                margin-left:-20px;
+                opacity: 0.3;
+            }
+        </style>
+    </head>  
+    <body> 
+        <div class="card">  
+            <img src="bg1.jpg" class="bg" />
+            <audio id="audio" src="bgm.wav" id="audio" loop></audio>
+            <button onclick="playMusic()" id="playbgm" style="margin-left:580px;margin-top: 0px;margin-bottom: -30px;">播放音乐</button>  
+            <h3 class="threeD">夏老师，祝您教师节快乐!</h1>  
+                
+            <div id="animated_div1"><span>感谢您对我们的无私奉献和辛勤付出。</span></div>
+            <div id="animated_div2"><span>感谢您对我们的耐心指导和无私奉献。</span></div>
+            <div id="animated_div3"><span>感谢您对我们的关心爱护和默默耕耘。</span></div>
+            <div id="animated_div4"><span>感谢您对我们的悉心教导和智慧启迪。</span></div>
+        </div>  
+        <script src="script.js"></script>  
+    </body>  
+</html>
